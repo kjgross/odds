@@ -1,0 +1,104 @@
+
+// ENUM (BET_STATE): {
+//   INCOMPLETE: 1,
+//   NO_MATCH: 2,
+//   MATCH_TO_USER: 3,
+//   MATCH_FROM_USER: 4,
+//   MATCH_SUM_DENOMINATOR: 5
+// }
+
+
+// CREATION ENDPOINT
+// POST (to server)
+// who I am (the creator) -- there is a login
+
+// oursweetapp.com/mobile/v1/bet
+{
+  "to_user": 1,
+  "description": "You chug all these beers",
+}
+
+
+// RESPOND FOR THE FIRST TIME
+// POST (to server)
+
+// oursweetapp.com/mobile/v1/bet/<bet_id>
+{
+  "denominator": 22,
+  "to_user_number": 1
+}
+
+
+// THE CREATOR RESPONDS TO THE RESPONSE
+// POST (to server)
+
+// oursweetapp.com/mobile/v1/bet/<bet_id>
+{
+  "from_user_number": 1
+}
+
+
+// BET DETAIL
+// GET (from server)
+
+// oursweetapp.com/mobile/v1/bet/<bet_id>
+{
+  "data": {
+    "bet": {
+      "id": 24,
+      "to_user": 4,
+      "from_user": 2,
+      "description": "You chug all these beers",
+      "denominator": 22,
+      "from_user_number": [1, 2, 3],
+      "to_user_number": [1, 2, 3],
+      "state": "BET_STATE"
+    },
+    "users": {
+      4: {
+        "first_name": "Kelsey",
+        "last_name": "Gross"
+        // other fields
+      },
+      2: {
+        "first_name": "Ben",
+        "last_name": "Pyle"
+      }
+    }
+  },
+  "error": 0
+}
+
+
+// INBOX
+// GET
+{
+  "data": {
+    "bets":[
+      {
+        "id": 24,
+        "to_user": 4,
+        "from_user": 2,
+        "description": "You chug all these beers",
+        "denominator": 22,
+        "from_user_number": [1, 2, 3],
+        "to_user_number": [1, 2, 3],
+        "state": "BET_STATE"
+      },
+    ],
+    "users": {
+      4: {
+        "first_name": "Kelsey",
+        "last_name": "Gross"
+        // other fields
+      },
+      2: {
+        "first_name": "Ben",
+        "last_name": "Pyle"
+      }
+    }
+
+  }
+  "error": 0
+}
+
