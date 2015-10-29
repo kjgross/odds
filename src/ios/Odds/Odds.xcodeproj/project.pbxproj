@@ -156,6 +156,7 @@
 		0DF83D0E1BE1E69D00BD0893 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Sean McQueen";
 				TargetAttributes = {
@@ -411,6 +412,7 @@
 				0DF83D371BE1E69D00BD0893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DF83D381BE1E69D00BD0893 /* Build configuration list for PBXNativeTarget "OddsTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +421,7 @@
 				0DF83D3A1BE1E69D00BD0893 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
