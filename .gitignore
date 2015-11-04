@@ -1,0 +1,13 @@
+
+# iOS
+.DS_Store
+*.swp
+*.lock
+profile
+xcuserdata
+*.xccheckout
+!xcshareddata
+!Podfile.lock
+Pods/
+derivedDataDirectory
+

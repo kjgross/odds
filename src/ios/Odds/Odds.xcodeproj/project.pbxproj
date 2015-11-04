@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D94FD4C1BE9B49400D05E89 /* ODBet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD4B1BE9B49400D05E89 /* ODBet.swift */; };
+		0D94FD4E1BE9B50E00D05E89 /* ODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD4D1BE9B50E00D05E89 /* ODModel.swift */; };
+		0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */; };
+		0D94FD541BE9C18D00D05E89 /* ODInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */; };
+		0D94FD551BE9C18D00D05E89 /* ODInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */; };
 		0DF83D1C1BE1E69D00BD0893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */; };
-		0DF83D1E1BE1E69D00BD0893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF83D1D1BE1E69D00BD0893 /* ViewController.swift */; };
-		0DF83D211BE1E69D00BD0893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF83D1F1BE1E69D00BD0893 /* Main.storyboard */; };
 		0DF83D231BE1E69D00BD0893 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF83D221BE1E69D00BD0893 /* Images.xcassets */; };
-		0DF83D261BE1E69D00BD0893 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF83D241BE1E69D00BD0893 /* LaunchScreen.xib */; };
 		0DF83D321BE1E69D00BD0893 /* OddsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF83D311BE1E69D00BD0893 /* OddsTests.swift */; };
+		688DBEB4EE400B9269F4DBCF /* Pods_Odds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7658DBBD431921C67B13871 /* Pods_Odds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D94FD4B1BE9B49400D05E89 /* ODBet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODBet.swift; sourceTree = "<group>"; };
+		0D94FD4D1BE9B50E00D05E89 /* ODModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODModel.swift; sourceTree = "<group>"; };
+		0D94FD501BE9C0FE00D05E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODInboxViewController.swift; sourceTree = "<group>"; };
+		0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODInboxViewController.xib; sourceTree = "<group>"; };
 		0DF83D161BE1E69D00BD0893 /* Odds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF83D1A1BE1E69D00BD0893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DF83D1D1BE1E69D00BD0893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0DF83D201BE1E69D00BD0893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DF83D221BE1E69D00BD0893 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0DF83D251BE1E69D00BD0893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0DF83D2B1BE1E69D00BD0893 /* OddsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF83D301BE1E69D00BD0893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF83D311BE1E69D00BD0893 /* OddsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsTests.swift; sourceTree = "<group>"; };
+		BD9321160BC4131EB0503E95 /* Pods-Odds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Odds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Odds/Pods-Odds.debug.xcconfig"; sourceTree = "<group>"; };
+		BEEE5430AE47FB297370AABB /* Pods-Odds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Odds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Odds/Pods-Odds.release.xcconfig"; sourceTree = "<group>"; };
+		E7658DBBD431921C67B13871 /* Pods_Odds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Odds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688DBEB4EE400B9269F4DBCF /* Pods_Odds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D94FD481BE9B42500D05E89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D94FD4B1BE9B49400D05E89 /* ODBet.swift */,
+				0D94FD4D1BE9B50E00D05E89 /* ODModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0D94FD491BE9B45D00D05E89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */,
+				0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0D94FD4A1BE9B46400D05E89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0DF83D0D1BE1E69D00BD0893 = {
 			isa = PBXGroup;
 			children = (
 				0DF83D181BE1E69D00BD0893 /* Odds */,
 				0DF83D2E1BE1E69D00BD0893 /* OddsTests */,
 				0DF83D171BE1E69D00BD0893 /* Products */,
+				5B6684658C9875D4B485212E /* Pods */,
+				ED7F0273F7CE3E89415E5E15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +113,12 @@
 		0DF83D181BE1E69D00BD0893 /* Odds */ = {
 			isa = PBXGroup;
 			children = (
+				0D94FD4A1BE9B46400D05E89 /* Views */,
+				0D94FD491BE9B45D00D05E89 /* Controllers */,
+				0D94FD481BE9B42500D05E89 /* Models */,
 				0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */,
-				0DF83D1D1BE1E69D00BD0893 /* ViewController.swift */,
-				0DF83D1F1BE1E69D00BD0893 /* Main.storyboard */,
 				0DF83D221BE1E69D00BD0893 /* Images.xcassets */,
-				0DF83D241BE1E69D00BD0893 /* LaunchScreen.xib */,
+				0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */,
 				0DF83D191BE1E69D00BD0893 /* Supporting Files */,
 			);
 			path = Odds;
@@ -112,6 +149,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5B6684658C9875D4B485212E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD9321160BC4131EB0503E95 /* Pods-Odds.debug.xcconfig */,
+				BEEE5430AE47FB297370AABB /* Pods-Odds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED7F0273F7CE3E89415E5E15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7658DBBD431921C67B13871 /* Pods_Odds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DF83D351BE1E69D00BD0893 /* Build configuration list for PBXNativeTarget "Odds" */;
 			buildPhases = (
+				7E20739CF27C7F51D07C923C /* Check Pods Manifest.lock */,
 				0DF83D121BE1E69D00BD0893 /* Sources */,
 				0DF83D131BE1E69D00BD0893 /* Frameworks */,
 				0DF83D141BE1E69D00BD0893 /* Resources */,
+				3612395A98283F9B0EFEE7A7 /* Embed Pods Frameworks */,
+				D9724A2726693CDFAEDD1701 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +213,7 @@
 		0DF83D0E1BE1E69D00BD0893 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OD;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Sean McQueen";
@@ -193,9 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF83D211BE1E69D00BD0893 /* Main.storyboard in Resources */,
-				0DF83D261BE1E69D00BD0893 /* LaunchScreen.xib in Resources */,
+				0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */,
 				0DF83D231BE1E69D00BD0893 /* Images.xcassets in Resources */,
+				0D94FD551BE9C18D00D05E89 /* ODInboxViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +266,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3612395A98283F9B0EFEE7A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Odds/Pods-Odds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E20739CF27C7F51D07C923C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9724A2726693CDFAEDD1701 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Odds/Pods-Odds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DF83D121BE1E69D00BD0893 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DF83D1E1BE1E69D00BD0893 /* ViewController.swift in Sources */,
+				0D94FD4E1BE9B50E00D05E89 /* ODModel.swift in Sources */,
+				0D94FD541BE9C18D00D05E89 /* ODInboxViewController.swift in Sources */,
+				0D94FD4C1BE9B49400D05E89 /* ODBet.swift in Sources */,
 				0DF83D1C1BE1E69D00BD0893 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,18 +345,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0DF83D1F1BE1E69D00BD0893 /* Main.storyboard */ = {
+		0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0DF83D201BE1E69D00BD0893 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0DF83D241BE1E69D00BD0893 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0DF83D251BE1E69D00BD0893 /* Base */,
+				0D94FD501BE9C0FE00D05E89 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -341,6 +441,7 @@
 		};
 		0DF83D361BE1E69D00BD0893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD9321160BC4131EB0503E95 /* Pods-Odds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Odds/Info.plist;
@@ -351,6 +452,7 @@
 		};
 		0DF83D371BE1E69D00BD0893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEEE5430AE47FB297370AABB /* Pods-Odds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Odds/Info.plist;
