@@ -12,6 +12,10 @@
 		0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */; };
 		0D94FD541BE9C18D00D05E89 /* ODInboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */; };
 		0D94FD551BE9C18D00D05E89 /* ODInboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */; };
+		0D94FD581BE9C80700D05E89 /* ODInboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD561BE9C80700D05E89 /* ODInboxCell.swift */; };
+		0D94FD591BE9C80700D05E89 /* ODInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD571BE9C80700D05E89 /* ODInboxCell.xib */; };
+		0D94FD5D1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD5C1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift */; };
+		0D94FD601BE9D2A800D05E89 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD5F1BE9D2A800D05E89 /* Extensions.swift */; };
 		0DF83D1C1BE1E69D00BD0893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */; };
 		0DF83D231BE1E69D00BD0893 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF83D221BE1E69D00BD0893 /* Images.xcassets */; };
 		0DF83D321BE1E69D00BD0893 /* OddsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF83D311BE1E69D00BD0893 /* OddsTests.swift */; };
@@ -34,6 +38,10 @@
 		0D94FD501BE9C0FE00D05E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODInboxViewController.swift; sourceTree = "<group>"; };
 		0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODInboxViewController.xib; sourceTree = "<group>"; };
+		0D94FD561BE9C80700D05E89 /* ODInboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODInboxCell.swift; sourceTree = "<group>"; };
+		0D94FD571BE9C80700D05E89 /* ODInboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODInboxCell.xib; sourceTree = "<group>"; };
+		0D94FD5C1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODInboxCellBetViewModel.swift; sourceTree = "<group>"; };
+		0D94FD5F1BE9D2A800D05E89 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0DF83D161BE1E69D00BD0893 /* Odds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF83D1A1BE1E69D00BD0893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,8 +94,19 @@
 		0D94FD4A1BE9B46400D05E89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D94FD561BE9C80700D05E89 /* ODInboxCell.swift */,
+				0D94FD571BE9C80700D05E89 /* ODInboxCell.xib */,
+				0D94FD5C1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		0D94FD5E1BE9D1B200D05E89 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0D94FD5F1BE9D2A800D05E89 /* Extensions.swift */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		0DF83D0D1BE1E69D00BD0893 = {
@@ -113,6 +132,7 @@
 		0DF83D181BE1E69D00BD0893 /* Odds */ = {
 			isa = PBXGroup;
 			children = (
+				0D94FD5E1BE9D1B200D05E89 /* Categories */,
 				0D94FD4A1BE9B46400D05E89 /* Views */,
 				0D94FD491BE9B45D00D05E89 /* Controllers */,
 				0D94FD481BE9B42500D05E89 /* Models */,
@@ -254,6 +274,7 @@
 				0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */,
 				0DF83D231BE1E69D00BD0893 /* Images.xcassets in Resources */,
 				0D94FD551BE9C18D00D05E89 /* ODInboxViewController.xib in Resources */,
+				0D94FD591BE9C80700D05E89 /* ODInboxCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,8 +340,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D94FD5D1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift in Sources */,
+				0D94FD581BE9C80700D05E89 /* ODInboxCell.swift in Sources */,
 				0D94FD4E1BE9B50E00D05E89 /* ODModel.swift in Sources */,
 				0D94FD541BE9C18D00D05E89 /* ODInboxViewController.swift in Sources */,
+				0D94FD601BE9D2A800D05E89 /* Extensions.swift in Sources */,
 				0D94FD4C1BE9B49400D05E89 /* ODBet.swift in Sources */,
 				0DF83D1C1BE1E69D00BD0893 /* AppDelegate.swift in Sources */,
 			);
