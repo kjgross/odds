@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 
+// local server
 	"github.com/gorilla/mux"
 )
 
@@ -20,7 +21,7 @@ func main() {
 }
 
 func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Welcome!\n")
+	fmt.Fprint(w, "Welcome to Odds!\n")
 }
 
 func BetIndex(w http.ResponseWriter, r *http.Request) {
