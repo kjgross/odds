@@ -22,9 +22,8 @@ class ODModel: ODModelProtocol {
 
     var id : Int?
 
-    init(objectData: Dictionary<String, JSON>) {
-        let json = JSON(objectData)
-        self.id = json[ODIdKey].int
+    init(objectData: JSON) {
+        self.id = objectData[ODIdKey].int
     }
 
     func isValid () -> Bool {

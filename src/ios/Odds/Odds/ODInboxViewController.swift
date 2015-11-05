@@ -9,18 +9,7 @@
 import UIKit
 
 import SwiftyJSON
-
-
-private let fakeBetData : [String : JSON] = [
-    "id": 24,
-    "to_user": 4,
-    "from_user": 2,
-    "description": "You chug all these beers",
-    "denominator": 22,
-    "from_user_number": [1, 2, 3],
-    "to_user_number": [1, 2, 3],
-    "state": 0
-]
+import Alamofire
 
 
 class ODInboxViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -35,12 +24,13 @@ class ODInboxViewController: UIViewController, UITableViewDelegate, UITableViewD
     // Initializers
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        bets = [ODBet(objectData: fakeBetData)]
+        bets = []
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
+
     required init?(coder aDecoder: NSCoder) {
-        bets = [ODBet(objectData: fakeBetData)]
+        bets = []
         super.init(coder: aDecoder)
     }
 
@@ -48,6 +38,9 @@ class ODInboxViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.getData()
+
         self.navigationItem.title = "Bets"
 
         self.tableView.delegate = self
@@ -76,4 +69,19 @@ class ODInboxViewController: UIViewController, UITableViewDelegate, UITableViewD
         let bet = self.bets[indexPath.row]
         print(String(bet.id!))
     }
+
+
+    func getData () {
+        // TODO: not use localhost and also disallow this host at some point
+        // TODO: loading indicator
+        Alamofire.request(.GET, "http://localhost:8080/bets", parameters: nil)
+            .responseJSON { response in
+                if let json = response.result.value {
+                    let bet : ODBet = ODBet(objectData: JSON(json[0]))
+                    self.bets = [bet]
+                    self.tableView.reloadData()
+                }
+        }
+    }
+
 }

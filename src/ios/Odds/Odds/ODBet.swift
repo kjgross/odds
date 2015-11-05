@@ -32,24 +32,23 @@ class ODBet: ODModel {
     var toUserGuesses: [Int]?
     var state: ODBetState?
 
-    override init(objectData: Dictionary<String, JSON>) {
-        let json = JSON(objectData)
-        self.toUserId = json[ODToUserKey].int
-        self.fromUserId = json[ODFromUserKey].int
-        self.betDescription = json[ODDescriptionKey].string
-        self.denominator = json[ODDenominatorKey].int
+    override init(objectData: JSON) {
+        self.toUserId = objectData[ODToUserKey].int
+        self.fromUserId = objectData[ODFromUserKey].int
+        self.betDescription = objectData[ODDescriptionKey].string
+        self.denominator = objectData[ODDenominatorKey].int
 
-        let fromUserGuesses = json[ODFromUserGuessesKey].array
+        let fromUserGuesses = objectData[ODFromUserGuessesKey].array
         if fromUserGuesses != nil {
             self.fromUserGuesses = (fromUserGuesses!).map { $0.int! }
         }
 
-        let toUserGuesses = json[ODToUserGuessesKey].array
+        let toUserGuesses = objectData[ODToUserGuessesKey].array
         if toUserGuesses != nil {
             self.toUserGuesses = (toUserGuesses!).map { $0.int! }
         }
 
-        let state = json[ODStateKey].int
+        let state = objectData[ODStateKey].int
         if state != nil {
             self.state = ODBetState(rawValue: state!)
         } else {

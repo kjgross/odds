@@ -30,7 +30,7 @@ class ODLoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             // Handle cancellations
         } else {
 
-            let fields : String = "id, name, first_name, last_name, picture.type(large), email"
+            let fields : String = "id, name, gender, picture.type(large), email"
             let graphRequest = FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields": fields])
             graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
                 if ((error) != nil) {
