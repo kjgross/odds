@@ -25,9 +25,23 @@ func Index(w http.ResponseWriter, r *http.Request) {
 
 func BetIndex(w http.ResponseWriter, r *http.Request) {
 	bets := Bets{
-		Bet{Name: "Write presentation"},
-		Bet{Name: "Host meetup"},
-	}
+		Bet{Id: 1,
+      To_user: 2,
+      From_user: 3,
+      Description: "Eat a jalapeno",
+      Denominator: 10,
+      From_user_number: 3,
+      To_user_number: 2,
+      State: "INCOMPLETE"},
+		Bet{Id: 24,
+      To_user: 4,
+      From_user: 2,
+      Description: "You chug all these beers",
+      Denominator: 22,
+      From_user_number: 2,
+      To_user_number: 4,
+      State: "MATCH_TO_USER"},
+  }
 
 	if err := json.NewEncoder(w).Encode(bets); err != nil {
 		panic(err)
