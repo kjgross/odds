@@ -52,5 +52,14 @@ func BetIndex(w http.ResponseWriter, r *http.Request) {
 func BetShow(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	betId := vars["betId"]
+	bet_chosen := Bet{Id: 1,
+      To_user: 2,
+      From_user: 3,
+      Description: "Eat a jalapeno",
+      Denominator: 10,
+      From_user_number: 3,
+      To_user_number: 2,
+      State: 1}
 	fmt.Fprintf(w, "Bet show: %s\n", betId)
+	fmt.Fprintf(w, "beets: %+v\n", bet_chosen)
 }
