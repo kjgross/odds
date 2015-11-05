@@ -8,7 +8,7 @@ type Bet struct {
 	Denominator int `json:"denominator"`
 	From_user_number int `json:"from_user_number"` //needs to handle an array
 	To_user_number int `json:"to_user_number"` //needs to handle an array
-	State string `json:"bet_state"` //needs to handle proper enum
+	State int `json:"bet_state"` //needs to handle proper enum
 }
 
 type Bets []Bet

@@ -33,7 +33,7 @@ func BetIndex(w http.ResponseWriter, r *http.Request) {
       Denominator: 10,
       From_user_number: 3,
       To_user_number: 2,
-      State: "INCOMPLETE"},
+      State: 1},
 		Bet{Id: 24,
       To_user: 4,
       From_user: 2,
@@ -41,7 +41,7 @@ func BetIndex(w http.ResponseWriter, r *http.Request) {
       Denominator: 22,
       From_user_number: 2,
       To_user_number: 4,
-      State: "MATCH_TO_USER"},
+      State: 2},
   }
 
 	if err := json.NewEncoder(w).Encode(bets); err != nil {
