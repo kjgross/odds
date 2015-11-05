@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7B8F5D1BEB02600084B758 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7B8F5C1BEB02600084B758 /* FBSDKCoreKit.framework */; };
+		0D7B8F5F1BEB02C70084B758 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7B8F5E1BEB02C70084B758 /* FBSDKLoginKit.framework */; };
+		0D7B8F621BEB04730084B758 /* ODLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7B8F601BEB04730084B758 /* ODLoginViewController.swift */; };
+		0D7B8F631BEB04730084B758 /* ODLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D7B8F611BEB04730084B758 /* ODLoginViewController.xib */; };
 		0D94FD4C1BE9B49400D05E89 /* ODBet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD4B1BE9B49400D05E89 /* ODBet.swift */; };
 		0D94FD4E1BE9B50E00D05E89 /* ODModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D94FD4D1BE9B50E00D05E89 /* ODModel.swift */; };
 		0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */; };
@@ -33,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D7B8F5B1BEB004B0084B758 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0D7B8F5C1BEB02600084B758 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		0D7B8F5E1BEB02C70084B758 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		0D7B8F601BEB04730084B758 /* ODLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODLoginViewController.swift; sourceTree = "<group>"; };
+		0D7B8F611BEB04730084B758 /* ODLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ODLoginViewController.xib; sourceTree = "<group>"; };
 		0D94FD4B1BE9B49400D05E89 /* ODBet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODBet.swift; sourceTree = "<group>"; };
 		0D94FD4D1BE9B50E00D05E89 /* ODModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODModel.swift; sourceTree = "<group>"; };
 		0D94FD501BE9C0FE00D05E89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -60,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				688DBEB4EE400B9269F4DBCF /* Pods_Odds.framework in Frameworks */,
+				0D7B8F5D1BEB02600084B758 /* FBSDKCoreKit.framework in Frameworks */,
+				0D7B8F5F1BEB02C70084B758 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 		0D94FD491BE9B45D00D05E89 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D7B8F601BEB04730084B758 /* ODLoginViewController.swift */,
+				0D7B8F611BEB04730084B758 /* ODLoginViewController.xib */,
 				0D94FD521BE9C18D00D05E89 /* ODInboxViewController.swift */,
 				0D94FD531BE9C18D00D05E89 /* ODInboxViewController.xib */,
 			);
@@ -137,6 +150,7 @@
 				0D94FD491BE9B45D00D05E89 /* Controllers */,
 				0D94FD481BE9B42500D05E89 /* Models */,
 				0DF83D1B1BE1E69D00BD0893 /* AppDelegate.swift */,
+				0D7B8F5B1BEB004B0084B758 /* Bridging-Header.h */,
 				0DF83D221BE1E69D00BD0893 /* Images.xcassets */,
 				0D94FD4F1BE9C0FE00D05E89 /* LaunchScreen.xib */,
 				0DF83D191BE1E69D00BD0893 /* Supporting Files */,
@@ -181,6 +195,8 @@
 		ED7F0273F7CE3E89415E5E15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7B8F5C1BEB02600084B758 /* FBSDKCoreKit.framework */,
+				0D7B8F5E1BEB02C70084B758 /* FBSDKLoginKit.framework */,
 				E7658DBBD431921C67B13871 /* Pods_Odds.framework */,
 			);
 			name = Frameworks;
@@ -272,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D94FD511BE9C0FE00D05E89 /* LaunchScreen.xib in Resources */,
+				0D7B8F631BEB04730084B758 /* ODLoginViewController.xib in Resources */,
 				0DF83D231BE1E69D00BD0893 /* Images.xcassets in Resources */,
 				0D94FD551BE9C18D00D05E89 /* ODInboxViewController.xib in Resources */,
 				0D94FD591BE9C80700D05E89 /* ODInboxCell.xib in Resources */,
@@ -341,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D94FD5D1BE9CA1900D05E89 /* ODInboxCellBetViewModel.swift in Sources */,
+				0D7B8F621BEB04730084B758 /* ODLoginViewController.swift in Sources */,
 				0D94FD581BE9C80700D05E89 /* ODInboxCell.swift in Sources */,
 				0D94FD4E1BE9B50E00D05E89 /* ODModel.swift in Sources */,
 				0D94FD541BE9C18D00D05E89 /* ODInboxViewController.swift in Sources */,
@@ -468,9 +486,15 @@
 			baseConfigurationReference = BD9321160BC4131EB0503E95 /* Pods-Odds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS",
+				);
 				INFOPLIST_FILE = Odds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Odds/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -479,9 +503,15 @@
 			baseConfigurationReference = BEEE5430AE47FB297370AABB /* Pods-Odds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS",
+				);
 				INFOPLIST_FILE = Odds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Odds/Bridging-Header.h";
 			};
 			name = Release;
 		};

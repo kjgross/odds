@@ -13,14 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
-        // Inbox is launch view for now.
-        // TODO: sign up / sign in flow
-        self.window?.rootViewController = UINavigationController.init(rootViewController: ODInboxViewController())
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        if ((FBSDKAccessToken.currentAccessToken()) != nil) {
+            self.window?.rootViewController = UINavigationController.init(rootViewController: ODInboxViewController())
+        } else {
+            self.window?.rootViewController = ODLoginViewController()
+        }
+
         self.window?.makeKeyAndVisible()
+
         return true
     }
 
@@ -39,13 +43,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication,
+        openURL url: NSURL,
+        sourceApplication: String?,
+        annotation: AnyObject) -> Bool {
+            return FBSDKApplicationDelegate.sharedInstance().application(
+                application,
+                openURL: url,
+                sourceApplication: sourceApplication,
+                annotation: annotation)
+    }
 
 }
 
